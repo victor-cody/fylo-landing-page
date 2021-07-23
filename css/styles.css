@@ -1,0 +1,51 @@
+/*Primary Colors*/
+/*------------------------------------------------------
+ Header 
+------------------------------------------------------*/
+.header {
+  padding: 1.2rem 0;
+  height: 5.6rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 450ms;
+  z-index: 990;
+}
+
+.header.header-scrolled-view {
+  background: #1c2431;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 20px 0;
+  height: 5.64rem;
+  box-shadow: 0 1px 12px rgba(1, 12, 22, 0.14);
+}
+
+.header .container-fluid {
+  width: 88%;
+  height: 100%;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* align-items: center; */
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+/*---------------------------------------------------
+# Navigation Menu
+----------------------------------------------------*/
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row nowrap;
+  /* align-items: center; */
+  /* transform: translateY(0.5rem); */
+}
