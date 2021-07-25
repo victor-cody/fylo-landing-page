@@ -1,6 +1,6 @@
-/*------------------------------------------------------
+/*------------------------------------
  Header 
-------------------------------------------------------*/
+*/
 
 .header {
 	padding: 1.2rem 0;
@@ -13,35 +13,96 @@
 	z-index: 990;
 
 	&.header-scrolled-view {
-		background: $dark-blue;
+		background-color: $dark-blue;
 		position: fixed;
 		left: 0;
 		top: 0;
 		right: 0;
 		padding: 20px 0;
 		height: 5.64rem;
-		box-shadow: 0 1px 12px rgba(1, 12, 22, 0.14)
+		box-shadow: 0 1px 12px rgba(1, 12, 22, 0.14);
 	}
+
 	.container-fluid {
+		@include flex($justify-content: space-between, $align-items: center, $direction: row wrap);
 		width: 88%;
 		height: 100%;
 		position: relative;
 		display: -webkit-flex;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-		align-items: center;
-		/* align-items: center; */
 		margin: 0 auto;
 		transition: all 0.3s ease;
 	}
 }
 
-/*---------------------------------------------------
+/*------------------------------------
 # Navigation Menu
-----------------------------------------------------*/
+*/
 .nav-menu {
-	@include flex($justify-content:space-between)
-	/* align-items: center; */
-	/* transform: translateY(0.5rem); */
+	@include flex($justify-content: space-between);
+
+	&,
+	* {
+		padding: 0;
+		list-style: none;
+	}
+
+	ul {
+		margin: 4px 0 0 0;
+		padding: 10px;
+		box-shadow: 0px 1px 30px hsla(220, 60%, 5%, 0.25);
+		background: $white;
+		position: absolute;
+		display: none;
+		transform: scale(0);
+		top: 100%;
+		left: -10%;
+		z-index: 99;
+		transition: all 400ms ease;
+
+		ul {
+			margin: 0;
+		}
+
+		li {
+			min-width: 180px;
+			transition: all 0.3s;
+
+			a {
+				padding: 10px;
+				color: rgb(46, 44, 44);
+				transition: 0.3s;
+				display: block;
+				font-size: 0.92rem;
+				text-transform: none;
+			}
+		}
+	}
+
+	li {
+		position: relative;
+		white-space: nowrap;
+		height: 96%;
+
+		&:hover>ul {
+			display: block;
+			transform: scale(1);
+		}
+	}
+
+	>li {
+		margin-left: 10px;
+	}
+
+
+	a {
+		padding: 0 8px 10px 6px;
+		text-decoration: none;
+		display: inline-block;
+		color: $white;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 1rem;
+		text-transform: capitalize;
+		outline: none;
+	}
 }

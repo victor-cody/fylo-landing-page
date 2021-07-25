@@ -1,0 +1,35 @@
+/* Back to top button */
+
+.back-to-top {
+	position: fixed;
+	display: none;
+	transform: scale(0);
+	background: $cyan;
+	color: $white;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	padding: 0.5rem 0.6rem 0;
+	line-height: 1.2;
+	font-size: 2rem;
+	border-radius: 50%;
+	right: 1.2rem;
+	bottom: 1.5rem;
+	z-index: 11;
+	transition: all 350ms;
+
+	:hover {
+		transform: scale(1.1);
+	}
+
+	&.show-toTop-btn {
+		display: block;
+		transform: scale(1);
+		z-index: 100;
+	}
+
+	i {
+		padding-top: 0.9rem;
+		color: $white;
+	}
+}

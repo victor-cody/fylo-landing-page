@@ -1,11 +1,18 @@
-
+//resets
 @import "../includes/variables";
 @import "../includes/mixins";
+@import "../includes/resets";
 
-@import "../components/intro";
-@import "../layouts/navbar";
-
+//button
+@import "../components/get-started-btn";
 @import "../components/back-to-top-btn";
+
+@import "../layouts/navbar";
+@import "../components/intro";
+
+@import "../components/featured-services";
+@import "../components/facts";
+@import "../components/testimonial";
 @import "../components/call-to-action";
 
 @import "../layouts/footer";
