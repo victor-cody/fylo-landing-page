@@ -74,6 +74,9 @@
 				display: block;
 				font-size: 0.92rem;
 				text-transform: none;
+				&:hover {
+					color: $cyan;
+				}
 			}
 		}
 	}
@@ -104,5 +107,71 @@
 		font-size: 1rem;
 		text-transform: capitalize;
 		outline: none;
-	}
+		&:hover {
+			color: $cyan;
+		}
+		}
+		}
+
+		.nav_menu_container {
+			@media screen and (max-width:600px) {
+				display: none;
+				opacity: 0;
+				transform: scale(0);
+			}
+		}
+
+		/* Mobile Nav Styling */
+
+		.mobile-nav {
+			position: fixed;
+			top: 84px;
+			padding: 1.4rem 0 0 1rem;
+			bottom: 24px;
+			z-index: 998;
+			background: $dark-blue;
+			left: 50%;
+			transform: translateX(-50%) scale(0);
+			width: 380px;
+			box-shadow: 0 3px 28px rgba(0, 0, 0, 0.18);
+			overflow-y: auto;
+			transition: all 0.44s;
+
+			ul {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+
+			li {
+				position: relative;
+			}
+
+			li a {
+				font-size: 1rem;
+				text-align: center;
+				text-transform: capitalize;
+				overflow: hidden;
+				padding: 6px 1.2rem;
+				position: relative;
+				text-decoration: none;
+				width: 100%;
+				display: block;
+				outline: none;
+				font-weight: 600;
+				font-family: "Montserrat", sans-serif;
+
+				&:hover {
+					color: $cyan;
+				}
+
+			}
+
+			@media screen and (max-width: 620px) {
+
+				&.active {
+					transform: translateX(-50%) scale(1);
+				}
+
+}
 }

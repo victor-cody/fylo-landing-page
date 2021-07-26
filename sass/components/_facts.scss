@@ -38,12 +38,15 @@
 
 	.img-part img {
 		width: 92%;
-		height: 88%;
+		height: 80%;
 		align-self: center;
 		justify-self: center;
 	}
 
-	@media screen and (max-width: 780px) {
+	@media screen and (max-width: 800px) {
+
+		padding: 30px 0 10px 0;
+
 		.row {
 			justify-content: space-between;
 			flex-flow: column nowrap;
@@ -69,8 +72,11 @@
 
 		.img-part {
 			&:last-of-type {
-				order: 3 !important;
+				order: 2 !important;
 			}
+
+			width: 96%;
+			height: 80%;
 
 			img {
 				width: 96%;

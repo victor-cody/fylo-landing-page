@@ -1,0 +1,21 @@
+/* Mobile Nav Styling */
+
+.mobile-nav-toggle {
+	z-index: 999;
+	border: 0;
+	background: none;
+	font-size: 17.6px;
+	display: none;
+	outline: none;
+	cursor: pointer;
+ i {
+	background: $dark-blue;
+	color: #fff;
+	transition: all 0.4s;
+}
+
+@media screen and (max-width: 620px) {
+		display: block;
+
+}
+}
