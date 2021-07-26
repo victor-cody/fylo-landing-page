@@ -1,8 +1,8 @@
 /* Call To Action Section
 --------------------------------*/
 .call-to-action {
-	background: linear-gradient(rgba(0, 142, 99, 0.14), rgba(0, 0, 0, 0.1)),
-		url(../img/call-to-action-bg.jpg) fixed center center;
+	// background: linear-gradient(rgba(0, 142, 99, 0.14), rgba(0, 0, 0, 0.1)),
+	// 	url(../img/call-to-action-bg.jpg) fixed center center;
 	padding: 3rem 1rem;
 	min-height: 32vh;
 	position: relative;
@@ -73,7 +73,7 @@
 
 	@media screen and (max-width:780px) {
 		.container {
-			width: 88%;
+			width: 90%;
 
 			.row {
 				width: 102%;

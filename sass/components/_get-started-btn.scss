@@ -1,0 +1,23 @@
+.btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 0.7rem 3.5rem;
+  border-radius: 50px;
+  transition: all 0.5s;
+  margin: 0.2rem;
+  color: $white;
+  background: linear-gradient(to right, $cyan, $blue);
+  box-shadow: 0 2px 25px hsla(220, 60%, 3%, 0.424);
+  z-index: 2;
+
+  &:hover {
+    background: $white;
+    color: $blue;
+    transform: translate3d(0, -0.6rem, 0);
+    box-shadow: 0 1px 30px hsla(220, 60%, 3%, 0.986);
+  }
+
+}

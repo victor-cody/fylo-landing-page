@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+
+@media screen and (max-width: 864px) {
+	#intro .carousel-content {
+		margin-top: 16.8rem;
+	}
+}
+
+@media screen and (max-width: 754px) {
+	#intro .carousel-container {
+		background-position: 48% 26%;
+		background-size: 38%;
+	}
+
+	#intro h2 {
+		margin: 0 auto 18px;
+		font-size: 2rem;
+	}
+}
+
+/*-----------------------------------------
+# Navigation Menu
+*/
+
+/* Nav Menu Essentials */
+
+/* Nav Menu Container */
+
+#nav-menu-container {
+	margin: 0;
+	transform: scale(1);
+	transition: all 300ms ease;
+}
+
+/* Nav Meu Styling */
+
+.nav-menu li:hover>a,
+.nav-menu>.menu-active>a {
+	color: var(--cyan);
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+
+/* Featured Services Section
+--------------------------------*/
+
+/* Facts Section
+--------------------------------*/
+
+/* Testimonial Section
+--------------------------------*/
+
+
+/* Call To Action Section
+--------------------------------*/
+
+
+/******************
+Footer
+**************/

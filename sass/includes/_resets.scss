@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background: $dark-blue;
+	color: $light;
+	line-height: 1.58;
+	font-family: "Open Sans", sans-serif;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+main#main {
+	position: relative;
+	padding: 2.2rem 0 0rem;
+	width: 100vw;
+	overflow: hidden;
+	background: hsl(218, 28%, 13%);
+}
+
+a {
+	color: $cyan;
+	transition: all 400ms;
+	&:hover,
+	&:active,
+	&:focus {
+		color: $cyan;
+		outline: none;
+		text-decoration: none !important;
+	}
+}
+
+.row {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+section {
+	width: 100vw;
+}
