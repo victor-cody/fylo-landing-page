@@ -5,7 +5,7 @@ body { background: #1c2431; color: #f9fafb; line-height: 1.58; font-family: "Ope
 
 h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", sans-serif; font-weight: 400; margin: 0 0 20px 0; padding: 0; }
 
-main#main { position: relative; padding: 2.2rem 0 0rem; width: 100vw; overflow: hidden; background: #181f2a; }
+main.main { position: relative; padding: 2.2rem 0 0rem; width: 100vw; overflow: hidden; }
 
 a { color: #65e2d9; transition: all 400ms; }
 
@@ -118,9 +118,11 @@ section { width: 100vw; }
 
 /* Featured Services Section
 --------------------------------*/
-.featured-services { /* background: #000; */ width: 100vw; padding: 5.8rem 0 3.6rem 0; }
+.featured-services { /* background: #000; */ background-size: 100%; background-position: 100% 100%; width: 100vw; padding: 2rem 0 0 0; position: relative; }
 
 .featured-services .box { color: #f9fafb; text-align: center; margin: 0.8rem 0rem 1rem; }
+
+.featured-services .bg { position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-size: 100%; background-position: 100% 100%; z-index: -1; }
 
 .featured-services h4, .featured-services h4 a { font-weight: 600; margin: 1.14rem 0; font-size: 1.18rem; color: white; }
 
@@ -128,9 +130,9 @@ section { width: 100vw; }
 
 .featured-services .description { font-size: 0.94rem; line-height: 24px; color: #f9fafb; width: 64%; margin: 0 auto; }
 
-@media screen and (max-width: 800px) { .featured-services { padding: 2rem 0 2rem 0; } }
+@media screen and (max-width: 800px) { .featured-services { padding: .5rem 0 .2rem 0; background: url(../../images/bg-curvy-mobile.svg); } }
 
-.facts { padding: 60px 0 20px 0; position: relative; }
+.facts { padding: 60px 0 20px 0; position: relative; background: #181f2a; }
 
 .facts .row { display: -ms-flexbox; display: -webkit-flex; display: flex; flex-flow: row wrap; width: 98%; margin: 0 auto; }
 
